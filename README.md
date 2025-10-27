@@ -8,7 +8,8 @@ Step 1: Create Virtual environemnt
 In the main folder type:
 
           python -m venv env
-          or
+or
+
           python3 -m venv env
           
 After this your virtual environemnt will be placed in the "env" folder
@@ -26,7 +27,7 @@ To activate virtual environment on MacOS or Linux type:
 
 Step 3: Install required packages
 ---------------------------------
-All required packages are listed in the file Requirements.txt
+All required packages are listed in the file Requirements.txt.
 To install all the required packages type:
 
           pip install -r Requirements.txt
