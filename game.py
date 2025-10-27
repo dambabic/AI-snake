@@ -200,8 +200,21 @@ class SnakeGameAI:
 
         font = pygame.font.Font('arial.ttf', 10)
         text5 = font.render("Speed", True, BLUE2)
-        self.display.blit(text5, [306, 483])
+        self.display.blit(text5, [306, 478])
         
+        font = pygame.font.Font('arial.ttf', 8)
+        if self.sp == 10:
+            text6 = font.render("1 of 5", True, WHITE)
+        elif self.sp == 20:
+            text6 = font.render("2 of 5", True, WHITE)
+        elif self.sp == 40:
+            text6 = font.render("3 of 5", True, WHITE)
+        elif self.sp == 100:
+            text6 = font.render("4 of 5", True, WHITE)
+        elif self.sp == 400:
+            text6 = font.render("5 of 5", True, WHITE)
+        self.display.blit(text6, [312, 490])
+
         # font = pygame.font.Font('arial.ttf', 20)
         # text6 = font.render("ooooo", True, WHITE)
         # self.display.blit(text6, [280, 497])
